@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calc</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+
+  <div class="d-flex justify-content-center align-items-center " style="min-height: 100vh;">
+    <div class="">
+      <div class="card shadow" style="">
+        
+        <div class="card-body">
+          <div class="container " style="width: 26rem;">
+
+            <div class="input-group mb-3 shadow">
+              <input type="text" class="form-control" id="bar" aria-describedby="basic-addon1">
+            </div>
+
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td><button type="button" class="btn btn-danger  w-75 shadow" onclick="clearAll()" >C</button></td>
+                  <td><button type="button" class="btn btn-danger w-75 " onclick="clearOne()"> X </button></td>
+                  <td><button type="button" class="btn btn-info w-75 " onclick="displayValue('%')">%</button></td>
+                  <td><button type="button" class="btn btn-info  w-75" onclick="displayValue('/')">/</button></td>
+                </tr>
+                <tr>
+                  <td><button type="button" class="btn btn-dark w-75 " onclick="displayValue(7)">7</button></td>
+                  <td><button type="button" class="btn btn-dark w-75 "onclick="displayValue(8)">8</button></td>
+                  <td><button type="button" class="btn btn-dark w-75 "onclick="displayValue(9)">9</button></td>
+                  <td><button type="button" class="btn btn-info w-75 "onclick="displayValue('*')">*</button></td>
+                </tr>
+                <tr>
+                  <td><button type="button" class="btn btn-dark w-75 "onclick="displayValue(4)">4</button></td>
+                  <td><button type="button" class="btn btn-dark w-75 "onclick="displayValue(5)">5</button></td>
+                  <td><button type="button" class="btn btn-dark w-75 "onclick="displayValue(6)">6</button></td>
+                  <td><button type="button" class="btn btn-info w-75 "onclick="displayValue('-')"> - </button></td>
+                </tr>
+                <tr>
+                  <td><button type="button" class="btn btn-dark w-75 "onclick="displayValue(1)" >1</button></td>
+                  <td><button type="button" class="btn btn-dark w-75 "onclick="displayValue(2)">2</button></td>
+                  <td><button type="button" class="btn btn-dark w-75 "onclick="displayValue(3)">3</button></td>
+                  <td><button type="button" class="btn btn-info w-75 "onclick="displayValue('+')">+</button></td>
+                </tr>
+                <tr>
+                  <td><button type="button" class="btn btn-dark w-75  " onclick="displayValue(0)">0</button></td>
+                  <td><button type="button" class="btn btn-dark w-75 " onclick="displayValue('.')">.</button></td>
+                  <td colspan="2"><button type="button" class="btn btn-success w-100 " onclick="calC()">=</button></td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+</div>
+<script src="project.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
